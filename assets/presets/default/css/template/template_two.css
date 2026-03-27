@@ -1,0 +1,228 @@
+/* -----------------------------------------
+   FORM TEMPLATE 4 – LIGHT SOFT MODERN STYLE
+   Balanced Height Edition
+   Using existing variable system (same classes)
+   ----------------------------------------- */
+
+/* Label */
+.form--label {
+  color: hsl(var(--black) / 0.8);
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: inline-block;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+}
+
+/* Inputs / Textareas */
+.form--control {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid hsl(var(--black) / 0.15);
+  background-color: hsl(var(--white));
+  color: hsl(var(--black));
+  font-size: 1rem;
+  padding: 14px 16px;
+  transition: all 0.25s ease;
+  border-radius: 6px 6px 0 0;
+  min-height: 50px;
+  box-sizing: border-box;
+}
+
+textarea.form--control {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form--control:hover {
+  border-color: hsl(var(--base) / 0.4);
+}
+
+.form--control:focus {
+  border-color: hsl(var(--base));
+  box-shadow: 0 4px 6px -3px hsl(var(--base) / 0.25);
+  background-color: hsl(var(--white));
+  outline: none;
+}
+
+.form--control::placeholder {
+  color: hsl(var(--black) / 0.4);
+}
+
+.form--control[type="password"] {
+    padding-right: 50px;
+}
+
+/* Disabled */
+.form--control:disabled {
+  border-color: hsl(var(--black) / 0.08);
+  color: hsl(var(--black) / 0.4);
+  background-color: hsl(var(--white) / 0.6);
+  cursor: not-allowed;
+}
+
+/* Select */
+.form--select {
+  border: none;
+  border-bottom: 2px solid hsl(var(--black) / 0.15);
+  background-color: hsl(var(--white));
+  padding: 14px 16px;
+  font-size: 1rem;
+  color: hsl(var(--black));
+  border-radius: 6px 6px 0 0;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  min-height: 50px;
+  box-sizing: border-box;
+}
+
+.form--select:focus {
+  border-color: hsl(var(--base));
+  outline: none;
+  box-shadow: 0 3px 5px -2px hsl(var(--base) / 0.25);
+}
+
+/* Nice Select */
+.nice-select {
+  background-color: hsl(var(--white)) !important;
+  border: none !important;
+  border-bottom: 2px solid hsl(var(--black) / 0.15) !important;
+  color: hsl(var(--black)) !important;
+  border-radius: 6px 6px 0 0 !important;
+  padding: 14px 16px !important;
+  min-height: 50px !important;
+  line-height: 1.4 !important;
+  transition: all 0.25s ease;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.nice-select:hover {
+  border-color: hsl(var(--base) / 0.4) !important;
+}
+
+.nice-select.open {
+  border-color: hsl(var(--base)) !important;
+  box-shadow: 0 3px 5px -2px hsl(var(--base) / 0.25);
+}
+
+.nice-select .list {
+  background-color: hsl(var(--white)) !important;
+  border: 1px solid hsl(var(--black) / 0.08) !important;
+  border-radius: 10px !important;
+  margin-top: 8px !important;
+  box-shadow: 0 6px 14px hsl(var(--black) / 0.1);
+}
+
+.nice-select .option:hover,
+.nice-select .option.selected {
+  background-color: hsl(var(--base) / 0.08) !important;
+  color: hsl(var(--base)) !important;
+}
+
+/* Input Group */
+.input--group {
+  display: flex;
+  align-items: stretch;
+  min-height: 50px;
+}
+
+.input--group .input-group-text {
+  background-color: hsl(var(--base) / 0.9);
+  border-radius: 6px 0 0 0;
+  color: hsl(var(--white));
+  border: 2px solid hsl(var(--base) / 0.9);
+  padding: 11px 16px;
+  display: flex;
+  align-items: center;
+}
+
+.input--group .form--control {
+  border-width: 2px !important;
+  padding-left: 16px;
+}
+
+.input--group .form--control:focus {
+  border-color: hsl(var(--base));
+  box-shadow: none !important;
+}
+
+/* Checkbox & Radio */
+.form--check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.form--check input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid hsl(var(--black) / 0.25);
+  border-radius: 6px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  background-color: hsl(var(--white));
+}
+
+.form--check input:hover {
+  border-color: hsl(var(--base) / 0.5);
+}
+
+.form--check input:checked {
+  background-color: hsl(var(--base));
+  border-color: hsl(var(--base));
+}
+
+.form--check input:checked::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background-color: hsl(var(--white));
+  border-radius: 2px;
+}
+
+.form--check label {
+  color: hsl(var(--black) / 0.85);
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+/* Switch */
+.form--switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.form--switch input {
+  appearance: none;
+  width: 44px;
+  height: 24px;
+  background-color: hsl(var(--black) / 0.15);
+  border-radius: 24px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.form--switch input::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: hsl(var(--white));
+  transition: all 0.3s ease;
+}
+
+.form--switch input:checked {
+  background-color: hsl(var(--base));
+}
+
+.form--switch input:checked::after {
+  left: 23px;
+}

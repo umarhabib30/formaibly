@@ -1,0 +1,191 @@
+/* -----------------------------------------
+   FORM TEMPLATE 3 – LIGHT MINIMAL STYLE
+   Using existing variable system
+   ----------------------------------------- */
+
+/* Label */
+.form--label {
+  color: hsl(var(--black) / 0.7);
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: inline-block;
+  font-size: 0.95rem;
+}
+
+/* Inputs / Textareas */
+.form--control {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid hsl(var(--black) / 0.1);
+  background-color: transparent;
+  color: hsl(var(--black));
+  font-size: 1rem;
+  padding: 10px 0;
+  transition: all 0.25s ease;
+  border-radius: 0;
+}
+
+.form--control:focus {
+  border-color: hsl(var(--base));
+  background-color: transparent;
+  outline: none;
+  box-shadow: 0 1px 0 0 hsl(var(--base));
+}
+
+.form--control::placeholder {
+  color: hsl(var(--black) / 0.4);
+}
+
+/* Disabled */
+.form--control:disabled {
+  border-color: hsl(var(--black) / 0.08);
+  color: hsl(var(--black) / 0.5);
+  cursor: not-allowed;
+}
+
+/* Selects */
+.form--select {
+  border: none;
+  border-bottom: 2px solid hsl(var(--black) / 0.1);
+  background-color: transparent;
+  padding: 10px 0;
+  font-size: 1rem;
+  color: hsl(var(--black));
+  border-radius: 0;
+  transition: border-color 0.25s ease;
+}
+
+.form--select:focus {
+  border-color: hsl(var(--base));
+  outline: none;
+}
+
+/* Nice Select */
+.nice-select {
+  background-color: transparent !important;
+  border: none !important;
+  border-bottom: 2px solid hsl(var(--black) / 0.1) !important;
+  color: hsl(var(--black)) !important;
+  border-radius: 0 !important;
+  padding: 10px 0 !important;
+  transition: all 0.25s ease;
+}
+
+.nice-select.open {
+  border-color: hsl(var(--base)) !important;
+}
+
+.nice-select .list {
+  background-color: hsl(var(--white)) !important;
+  border: 1px solid hsl(var(--black) / 0.08) !important;
+  border-radius: 8px !important;
+  margin-top: 6px !important;
+  box-shadow: 0 4px 12px hsl(var(--black) / 0.08);
+}
+
+.nice-select .option:hover,
+.nice-select .option.selected {
+  background-color: hsl(var(--base) / 0.1) !important;
+  color: hsl(var(--base)) !important;
+}
+
+/* Input group */
+
+.input--group .input-group-text {
+    background-color: hsl(var(--base));
+    border-radius: 0;
+    color: hsl(var(--white));
+    border: 2px solid hsl(var(--base));
+}
+
+.input--group .form--control {
+    border-width: 2px !important;
+    padding-left: 10px;
+}
+
+.input--group .form--control:focus {
+    border-color: hsl(var(--base));
+    background-color: transparent;
+    outline: none;
+    box-shadow: none !important;
+}
+
+.input--group:focus-within {
+    border-color: transparent;
+}
+
+/* Checkbox & Radio */
+.form--check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.form--check input {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid hsl(var(--black) / 0.25);
+  border-radius: 4px;
+  position: relative;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.form--check input:checked {
+  background-color: hsl(var(--base));
+  border-color: hsl(var(--base));
+}
+
+.form--check input:checked::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background-color: hsl(var(--white));
+  border-radius: 2px;
+}
+
+.form--check label {
+  color: hsl(var(--black) / 0.8);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* Switch */
+.form--switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.form--switch input {
+  appearance: none;
+  width: 38px;
+  height: 20px;
+  background-color: hsl(var(--black) / 0.1);
+  border-radius: 20px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.form--switch input::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: hsl(var(--white));
+  transition: all 0.3s ease;
+}
+
+.form--switch input:checked {
+  background-color: hsl(var(--base));
+}
+
+.form--switch input:checked::after {
+  left: 20px;
+}
