@@ -1,0 +1,228 @@
+/* -----------------------------------------
+   FORM TEMPLATE 5 – LIGHT ELEGANT CORNER STYLE
+   Using existing variable system (same classes)
+   ----------------------------------------- */
+
+/* Label */
+.form--label {
+  color: hsl(var(--black) / 0.85);
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: inline-block;
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+}
+
+/* Inputs / Textareas */
+.form--control {
+  width: 100%;
+  border: none;
+  border-left: 3px solid hsl(var(--black) / 0.12);
+  border-bottom: 3px solid hsl(var(--black) / 0.12);
+  background-color: hsl(var(--white));
+  color: hsl(var(--black));
+  font-size: 1rem;
+  padding: 14px 16px;
+  border-radius: 8px 0 8px 0;
+  transition: all 0.3s ease;
+  min-height: 50px;
+  box-sizing: border-box;
+}
+
+textarea.form--control {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form--control:hover {
+  border-color: hsl(var(--base) / 0.4);
+}
+
+.form--control:focus {
+  border-left-color: hsl(var(--base));
+  border-bottom-color: hsl(var(--base));
+  box-shadow: 0 4px 8px -2px hsl(var(--base) / 0.2);
+  outline: none;
+  background-color: hsl(var(--white));
+}
+
+.form--control::placeholder {
+  color: hsl(var(--black) / 0.45);
+}
+
+/* Disabled */
+.form--control:disabled {
+  border-color: hsl(var(--black) / 0.08);
+  color: hsl(var(--black) / 0.5);
+  background-color: hsl(var(--white) / 0.6);
+  cursor: not-allowed;
+}
+
+/* Select */
+.form--select {
+  border: none;
+  border-left: 3px solid hsl(var(--black) / 0.12);
+  border-bottom: 3px solid hsl(var(--black) / 0.12);
+  background-color: hsl(var(--white));
+  padding: 14px 16px;
+  font-size: 1rem;
+  color: hsl(var(--black));
+  border-radius: 8px 0 8px 0;
+  transition: all 0.3s ease;
+  min-height: 50px;
+}
+
+.form--select:focus {
+  border-left-color: hsl(var(--base));
+  border-bottom-color: hsl(var(--base));
+  box-shadow: 0 4px 8px -2px hsl(var(--base) / 0.2);
+  outline: none;
+}
+
+/* Nice Select */
+.nice-select {
+  background-color: hsl(var(--white)) !important;
+  border: none !important;
+  border-left: 3px solid hsl(var(--black) / 0.12) !important;
+  border-bottom: 3px solid hsl(var(--black) / 0.12) !important;
+  color: hsl(var(--black)) !important;
+  border-radius: 8px 0 8px 0 !important;
+  padding: 14px 16px !important;
+  min-height: 50px !important;
+  line-height: 1.4 !important;
+  transition: all 0.3s ease;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.nice-select:hover {
+  border-left-color: hsl(var(--base) / 0.4) !important;
+  border-bottom-color: hsl(var(--base) / 0.4) !important;
+}
+
+.nice-select.open {
+  border-left-color: hsl(var(--base)) !important;
+  border-bottom-color: hsl(var(--base)) !important;
+  box-shadow: 0 4px 8px -2px hsl(var(--base) / 0.2);
+}
+
+.nice-select .list {
+  background-color: hsl(var(--white)) !important;
+  border: 1px solid hsl(var(--black) / 0.08) !important;
+  border-radius: 10px !important;
+  margin-top: 8px !important;
+  box-shadow: 0 8px 16px hsl(var(--black) / 0.1);
+}
+
+.nice-select .option:hover,
+.nice-select .option.selected {
+  background-color: hsl(var(--base) / 0.08) !important;
+  color: hsl(var(--base)) !important;
+}
+
+/* Input Group */
+.input--group {
+  display: flex;
+  align-items: stretch;
+  min-height: 50px;
+}
+
+.input--group .input-group-text {
+  background-color: hsl(var(--base) / 0.9);
+  border-radius: 8px 0 0 0;
+  color: hsl(var(--white));
+  border-left: 3px solid hsl(var(--base) / 0.9);
+  border-bottom: 3px solid hsl(var(--base) / 0.9);
+  padding: 11px 16px;
+  display: flex;
+  align-items: center;
+}
+
+.input--group .form--control {
+  border-left: none;
+  border-bottom: 3px solid hsl(var(--black) / 0.12);
+}
+
+.input--group .form--control:focus {
+  border-bottom-color: hsl(var(--base));
+  box-shadow: none !important;
+}
+
+/* Checkbox & Radio */
+.form--check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.form--check input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-left: 3px solid hsl(var(--black) / 0.25);
+  border-bottom: 3px solid hsl(var(--black) / 0.25);
+  border-radius: 6px;
+  background-color: hsl(var(--white));
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form--check input:hover {
+  border-color: hsl(var(--base) / 0.5);
+}
+
+.form--check input:checked {
+  border-color: hsl(var(--base));
+  background-color: hsl(var(--base) / 0.1);
+  box-shadow: inset 0 0 0 6px hsl(var(--base));
+}
+
+.form--check label {
+  color: hsl(var(--black) / 0.85);
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+/* Switch */
+.form--switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.form--switch input {
+  appearance: none;
+  width: 44px;
+  height: 24px;
+  background-color: hsl(var(--black) / 0.15);
+  border-radius: 24px;
+  border-left: 3px solid hsl(var(--black) / 0.15);
+  border-bottom: 3px solid hsl(var(--black) / 0.15);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.form--switch input::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: hsl(var(--white));
+  transition: all 0.3s ease;
+}
+
+.form--switch input:checked {
+  background-color: hsl(var(--base) / 0.15);
+  border-left-color: hsl(var(--base));
+  border-bottom-color: hsl(var(--base));
+}
+
+.form--switch input:checked::after {
+  left: 23px;
+  background-color: hsl(var(--base));
+}
